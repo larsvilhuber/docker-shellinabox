@@ -16,6 +16,8 @@ EXPOSE 4200
 COPY docker-entrypoint.sh /
 COPY docker-command.sh /
 RUN chmod +x /docker-entrypoint.sh /docker-command.sh
-ENTRYPOINT ["/docker-entrypoint.sh"]
+WORKDIR /code
+
+ENTRYPOINT ["/docker-entrypoint.sh","/docker-command.sh"]
 CMD ["/docker-command.sh"]
 
