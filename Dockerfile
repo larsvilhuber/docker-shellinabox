@@ -5,7 +5,7 @@ USER root
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN groupadd -r shellinabox && useradd -r -g shellinabox shellinabox
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install shellinabox ssh sudo
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install shellinabox ssh sudo git
 
 COPY shellinabox_services /shellinabox_services
 RUN chmod 600 /shellinabox_services

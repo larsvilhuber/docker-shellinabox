@@ -1,7 +1,10 @@
 #!/bin/bash
 set -e
+SHELLINABOX_USER=statauser
+SHELLINABOX_GROUP=stata
+SHELLINABOX_DEFAULT=stata
 
-declare cmd="shellinaboxd --user statauser --group stata"
+declare cmd="shellinaboxd --user $SHELLINABOX_USER --group $SHELLINABOX_GROUP"
 
 [ -n "$SHELLINABOX_DISABLE_SSL" ] && cmd+=" --disable-ssl"
 

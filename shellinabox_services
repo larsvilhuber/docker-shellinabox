@@ -1,3 +1,3 @@
 # var name			url	application
-SHELLINABOX_SERVICE_LOCAL	local	LOGIN
-SHELLINABOX_SERVICE_STATA   stata   statauser:stata:/code:/usr/local/stata14/stata-mp
+SHELLINABOX_SERVICE_LOCAL	login	LOGIN
+SHELLINABOX_SERVICE_STATA   stata   AUTH:/code:/usr/local/stata14/stata-mp
