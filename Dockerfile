@@ -1,7 +1,7 @@
-FROM debian:wheezy
+FROM dataeditors/stata14:2021-06-02
 
 #######################################################################################
-
+USER root
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN groupadd -r shellinabox && useradd -r -g shellinabox shellinabox
 

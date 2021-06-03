@@ -28,6 +28,6 @@ if [ "$1" = '/docker-command.sh' ]; then
 	fi
 	unset SHELLINABOX_PASSWORD
 fi
-
+cd /tmp
 exec $@
 
